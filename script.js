@@ -1,4 +1,3 @@
-
 const container = document.querySelector(".container");
 const resetButton = document.querySelector("button");
 const root = document.documentElement;
