@@ -3,6 +3,7 @@ const container = document.querySelector(".container");
 const resetButton = document.querySelector("button");
 const root = document.documentElement;
 
+
 console.log(root);
 current = getComputedStyle(root).getPropertyValue('--main-color');
 
@@ -19,7 +20,11 @@ for(i = 0; i < 16; i++){
 }
 
 function Etch(e){
-    e.target.style.backgroundColor = "rgb(255, 255, 255)";
+    red = Math.round((Math.random() * 255));
+    green = Math.round((Math.random() * 255));
+    blue = Math.round((Math.random() * 255));
+
+    e.target.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 }
 
 function ResetSize(e){
